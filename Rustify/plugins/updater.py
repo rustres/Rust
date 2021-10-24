@@ -1,4 +1,4 @@
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 
 from os import path, environ, remove, execle
 import sys
@@ -6,8 +6,8 @@ import asyncio
 from git import Repo
 import os
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-from CyberPro import HEROKU_APIKEY, HEROKU_APPNAME
-from CyberPro.helper_functions.cyber import cyber
+from Rustify import HEROKU_APIKEY, HEROKU_APPNAME
+from Rustify.helper_functions.rust import rust
 
 from pyrogram import Client, filters, idle
 from pyrogram.types import Message
@@ -38,7 +38,7 @@ async def update_requirements():
 async def restart(message: Message, restart_type):
     if restart_type == 'update': text = '1'
     else: text = '2'
-    await os.execvp("python3", ["python3", "cyber.py", f"{message.chat.id}",  f" {message.message_id}", f"{text}"])
+    await os.execvp("python3", ["python3", "rust.py", f"{message.chat.id}",  f" {message.message_id}", f"{text}"])
 
     
 
@@ -51,7 +51,7 @@ async def restart_comand(client: Client, message: Message):
     
 @Client.on_message(filters.regex(r"^\.update(?: |$)(.*)") & filters.outgoing)
 async def ustream(client:Client, message:Message):
-    "CYBER PRO güncelleme modulu"
+    "Rust güncelleme modulu"
 
     await message.edit("`Güncəlləmələr yoxlanılır...`")
     conF = message.text.split(" ")
@@ -64,7 +64,7 @@ async def ustream(client:Client, message:Message):
             conf = "force"
     else:
         conf = ""
-    off_repo = "https://github.com/FaridDadashzade/CyberPro"
+    off_repo = "https://github.com/Rustres/Rust"
     if conf == "force":
         force_update = True
     else:
