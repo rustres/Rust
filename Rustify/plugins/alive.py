@@ -1,11 +1,11 @@
 from pyrogram import Client, filters
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 from pyrogram.types import Message
 from random import choice
     
 ALIVE_STR = [
     "`Rust is working...`",
-    "`Rust UserBot əla işləyir...`",
+    "`Rust is working on: docker ...`",
 ]
 
 
