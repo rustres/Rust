@@ -1,4 +1,4 @@
-from CyberPro.helper_functions.cyber import cyber
+from RustUser.helper_functions.rusty import rusty
 
 if __name__ == "__main__":
-    cyber.run() 
+    rusty.run() 
