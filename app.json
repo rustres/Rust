@@ -1,0 +1,97 @@
+{
+  "name": "Rust UserBot",
+  "description": "Rust UserBot",
+  "logo": "https://telegra.ph/file/078b999cbfbb19948e18d.jpg",
+  "keywords": [
+    "telegram",
+    "best",
+    "indian",
+    "pyrogram",
+    "userbot",
+    "3",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/FaridDadashzade/CyberPro",
+  "success_url": "https://telegram.dog/RustUserBot",
+  "website": "https://github.com/FaridDadashzade/CyberPro",
+  "env": {
+    "ENV": {
+      "description": "# TOXUNMA #",
+      "value": "ANYTHING"
+    },
+    "APP_ID": {
+      "description": "Bu dəyəri https://my.telegram.org saytından alın.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Bu dəyəri https://my.telegram.org saytından alın.",
+      "value": ""
+    },
+    "BOTLOG": {
+      "description": "Bunu True etsəniz BOTLOG_CHATID dəyərinə qrup id əlavə etməlisiniz.",
+      "value": "False"
+    },
+    "BOTLOG_CHATID": {
+      "description": "Botlog qrupunun id-ni qeyd edin.",
+      "value": "0"
+    },
+    "HU_STRING_SESSION": {
+      "description": "stringyarat.py faylını çalışdırıb aldığınız nəticəni buraya daxil edin.",
+      "value": ""
+    },
+    "COMMAND_HAND_LER": {
+      "description": "Pluginləri hansı işarə ilə işlədəcəksəniz onu qeyd edin. (Default olaraq . ayarlanıb)",
+      "required": false
+    },
+    "TMP_DOWNLOAD_DIRECTORY": {
+      "description": "# TOXUNMA #",
+      "required": false
+    },
+    "HEROKU_APIKEY": {
+      "description": "Bu dəyəri from http://dashboard.heroku.com/account saytından alın",
+      "required": true
+    },
+    "HEROKU": {
+      "description": "Bot herokuda işləyirsə bu dəyərə toxunmayın.",
+      "value": "True",
+      "required": true  
+    },
+    "HEROKU_APPNAME": {
+      "description": "Bu dəyəri from http://dashboard.heroku.com/account saytından alın",
+      "required": true
+    },
+    "OFFICIAL_UPSTREAM_REPO": {
+      "description": "# TOXUNMA #",
+      "value": "https://github.com/FaridDadashzade/CyberPro"
+    },
+    "G_DRIVE_CLIENT_ID": {
+      "description": "Bu dəyəri https://da.gd/so63O saytından alın",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_SECRET": {
+      "description": "Bu dəyəri https://da.gd/so63O saytından alın.",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
