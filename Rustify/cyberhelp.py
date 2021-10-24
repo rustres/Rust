@@ -1,11 +1,11 @@
-# Copyright (C) 2021 FaridDadashzade.
+# Copyright (C) 2021 RustAdmins.
 # Licensed under MIT license;
 # you may not use this file except in compliance with the License.
 # All rights reserved.
 
 # RustUserBot (C)
 
-from CyberPro import PATTERNS, CMD_HELP, CMD_HELP_BOT
+from Rustify import PATTERNS, CMD_HELP, CMD_HELP_BOT
 
 class CmdHelp:
 
