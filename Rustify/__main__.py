@@ -11,7 +11,7 @@ def onemli(yazi:str) -> None:
    print("[!] {}".format(yazi))
 
 
-from CyberPro import (
+from Rustify import (
     HU_STRING_SESSION,
     TG_COMPANION_BOT,
     APP_ID, 
@@ -28,7 +28,7 @@ import pyrogram
 
 def main():
     plugins = dict(
-        root="CyberPro/plugins",
+        root="Rustify/plugins",
     )
     
     if HU_STRING_SESSION is None:
@@ -52,7 +52,7 @@ def main():
 
 pluginler = []  
 
-for fayl in os.listdir("./CyberPro/plugins/"):
+for fayl in os.listdir("./Rustify/plugins/"):
     if not fayl.endswith(".py") or fayl.startswith("_"):
         continue
     pluginler.append(fayl.replace('.py',''))
