@@ -1,4 +1,4 @@
-# Copyright (C) 2021 FaridDadashzade.
+# Copyright (C) 2021 RustAdmins.
 # Licensed under MIT license;
 # you may not use this file except in compliance with the License.
 # All rights reserved.
@@ -8,13 +8,13 @@
 
 import asyncio
 from datetime import datetime
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.cyberhelp import CmdHelp
 from pyrogram.types import Message
 from pyrogram import Client, filters
-from CyberPro import COMMAND_HAND_LER
-from CyberPro.helper_functions.admin_check import admin_check
-from CyberPro.helper_functions.extract_user import extract_user
-from CyberPro.helper_functions.string_handling import extract_time
+from Rustify import COMMAND_HAND_LER
+from Rustify.helper_functions.admin_check import admin_check
+from Rustify.helper_functions.extract_user import extract_user
+from Rustify.helper_functions.string_handling import extract_time
 
 
 @Client.on_message(filters.command(['purge'], ['!','.','/']) & filters.me)
