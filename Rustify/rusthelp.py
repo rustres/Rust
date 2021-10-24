@@ -75,7 +75,7 @@ class CmdHelp:
 
     def add(self):
         """
-        Bir başa CMD_HELP əlavə edər
+        Birbaşa CMD_HELP əlavə edər
         """
         CMD_HELP_BOT[self.FILE] = {'info': {'warning': self.WARNING, 'info': self.INFO}, 'commands': self.COMMANDS}
         CMD_HELP[self.FILE] = self.get_result()
