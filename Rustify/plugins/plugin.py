@@ -2,10 +2,10 @@ import importlib
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import asyncio, os, sys
-from CyberPro.cyberhelp import CmdHelp
-from CyberPro.helper_functions.cyberhelp import pluginlerim
-from CyberPro.helper_functions.rustmisc import cavablananmsj
-from CyberPro.helper_functions.cyber import cyber
+from Rustify.rusthelp import CmdHelp
+from Rustify.helper_functions.rusthelp import pluginlerim
+from Rustify.helper_functions.rustmisc import cavablananmsj
+from Rustify.helper_functions.rust import rust
 
 
 @Client.on_message(filters.command(['plist'], ['!','.','/']) & filters.me)
