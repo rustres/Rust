@@ -1,4 +1,4 @@
-# Copyright (C) 2021 FaridDadashzade.
+# Copyright (C) 2021 RustAdmins.
 # Licensed under MIT license;
 # you may not use this file except in compliance with the License.
 # All rights reserved.
@@ -8,7 +8,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import asyncio
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 
 @Client.on_message(filters.regex(r"^\.kickme(?: |$)(.*)") & filters.outgoing)
 async def kickme(client: Client, message: Message):
