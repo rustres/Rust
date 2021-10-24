@@ -8,7 +8,7 @@ import asyncio
 import os
 
 try:
-    from CyberPro import APP_ID, API_HASH
+    from rustuser import APP_ID, API_HASH
 except ModuleNotFoundError:
     APP_ID = int(input("APP ID yazın: "))
     API_HASH = input("API HASH yazın: ")
