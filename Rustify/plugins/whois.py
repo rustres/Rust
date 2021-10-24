@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 from pyrogram.types import Message
 import os
 
-from CyberPro import MAX_MESSAGE_LENGTH
+from Rustify import MAX_MESSAGE_LENGTH
 
 
 @Client.on_message(filters.command(['whois'], ['!','.','/']) & filters.me)
