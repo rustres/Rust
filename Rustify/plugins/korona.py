@@ -1,7 +1,7 @@
 from covid import Covid
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.cyberhelp import CmdHelp
 
 
 @Client.on_message(filters.regex(r"^\.korona(?: |$)(.*)") & filters.outgoing)
