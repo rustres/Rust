@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.handlers import MessageHandler
 import datetime
 import asyncio
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 
 
 async def afk_handler(client, message):
