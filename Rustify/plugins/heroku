@@ -1,0 +1,74 @@
+import os
+import sys
+import time
+import math
+import requests
+import heroku3
+import asyncio
+import json
+
+from pyrogram import filters
+from pyrogram.types import Message
+
+from CyberPro import (
+	HEROKU_APIKEY,
+  HEROKU_APPNAME
+	)
+
+from CyberPro.cyberhelp import CmdHelp 
+  
+@Client.on_message(filters.command(['dyno'], ['!','.','/']) & filters.me)
+async def ping(client:Client, message:Message):
+	Heroku = heroku3.from_key(HEROKU_APIKEY)
+	msg = await m.edit("Hazırlanır...\nBiraz gözləyin")
+	u_id = Heroku.account().id
+	try:
+		if HEROKU_APIKEY is not None:
+			headers = {
+				"User-Agent": useragent,
+				"Authorization": f"Bearer {HEROKU_APIKEY}",
+				"Accept": "application/vnd.heroku+json; version=3.account-quotas",
+			}
+			path = "/accounts/" + u_id + "/actions/get-quota"
+			r = requests.get(heroku_api + path, headers=headers)
+			if r.status_code != 200:
+				await msg.edit(
+					"`Xəta: bilinməyən bir xəta baş verdi`\n\n" f">.`{r.reason}`\n"
+				)
+			result = r.json()
+			quota = result["account_quota"]
+			quota_used = result["quota_used"]
+			remaining_quota = quota - quota_used
+			percentage = math.floor(remaining_quota / quota * 100)
+			minutes_remaining = remaining_quota / 60
+			hours = math.floor(minutes_remaining / 60)
+			minutes = math.floor(minutes_remaining % 60)
+			App = result["apps"]
+			try:
+				App[0]["quota_used"]
+			except IndexError:
+				AppQuotaUsed = 0
+				AppPercentage = 0
+			else:
+				AppQuotaUsed = App[0]["quota_used"] / 60
+				AppPercentage = math.floor(App[0]["quota_used"] * 100 / quota)
+			AppHours = math.floor(AppQuotaUsed / 60)
+			AppMinutes = math.floor(AppQuotaUsed % 60)
+			await asyncio.sleep(2)
+			await msg.edit(
+				"**Dyno Istifadəsi**:\n\n"
+				f"**Ümumi saat:** 550 saat\n\n"
+				f"**⧓ Proqram adı:** __`{HEROKU_APPNAME}`__\n"
+				f"\r• `{AppHours} saat {AppMinutes} dəqiqə`"
+				f"**|**  [ `{AppPercentage}`**%** ]\n\n"
+				f"**⧓ Bu ay üçün qalan dyno:**\n"
+				f"\r• `{hours} saat & {minutes} dəqiqə`"
+				f" |  [ `{percentage}%` ]"
+			)
+	except Exception as e:
+		await error(m, e)
+  
+  
+  
+  
+  CmdHelp("heroku").add_command("dyno", None, "Dyno istifadəsini göndərər.").add()
