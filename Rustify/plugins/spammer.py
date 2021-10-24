@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import asyncio
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 
 @Client.on_message(filters.command(['spam'], ['!','.','/']) & filters.me)
 async def spam(client:Client, message:Message):
