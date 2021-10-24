@@ -1,4 +1,4 @@
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.rusthelp import CmdHelp
 from time import time
 import speedtest
 from pyrogram import Client, filters
