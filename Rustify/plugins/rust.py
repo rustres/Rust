@@ -1,5 +1,5 @@
-from CyberPro import APP_ID, API_HASH, HU_STRING_SESSION, CMD_HELP
-from CyberPro.helper_functions.cyberhelp import pluginlerim
+from Rustify import APP_ID, API_HASH, HU_STRING_SESSION, CMD_HELP
+from Rustify.helper_functions.rusthelp import pluginlerim
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
