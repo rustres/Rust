@@ -38,7 +38,7 @@ async def update_requirements():
 async def restart(message: Message, restart_type):
     if restart_type == 'update': text = '1'
     else: text = '2'
-    await os.execvp("python3", ["python3", "rust.py", f"{message.chat.id}",  f" {message.message_id}", f"{text}"])
+    await os.execvp("python3", ["python3", "rusty.py", f"{message.chat.id}",  f" {message.message_id}", f"{text}"])
 
     
 
@@ -138,7 +138,7 @@ async def ustream(client:Client, message:Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await update_requirements()
         await message.edit("`Zorla güncəlləmə sona çatdı..`")
-        args = [sys.executable, "rust.py"]
+        args = [sys.executable, "rusty.py"]
         execle(sys.executable, *args, environ)
         return
     await message.edit("`RustUserBot`\n**Status:**\n`Güncəllənir...`")
@@ -148,7 +148,7 @@ async def ustream(client:Client, message:Message):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await message.edit("`RustUserBot`\n**Status:**\n`Yenidən başladılır...`")
-    args = [sys.executable, "rust.py"]
+    args = [sys.executable, "rusty.py"]
     execle(sys.executable, *args, environ)
     return
 
