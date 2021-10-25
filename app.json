@@ -13,9 +13,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/FaridDadashzade/CyberPro",
+  "repository": "https://github.com/rustres/Rust",
   "success_url": "https://telegram.dog/RustUserBot",
-  "website": "https://github.com/FaridDadashzade/CyberPro",
+  "website": "https://github.com/rustres/Rust",
   "env": {
     "ENV": {
       "description": "# TOXUNMA #",
@@ -64,7 +64,7 @@
     },
     "OFFICIAL_UPSTREAM_REPO": {
       "description": "# TOXUNMA #",
-      "value": "https://github.com/FaridDadashzade/CyberPro"
+      "value": "https://github.com/rustres/Rust"
     },
     "G_DRIVE_CLIENT_ID": {
       "description": "Bu dəyəri https://da.gd/so63O saytından alın",
