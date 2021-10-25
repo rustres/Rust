@@ -51,7 +51,7 @@ async def pluginyukle(client:Client, message:Message):
               return
             await message.edit(f"**Plugin uğurla yükləndi:** `{cavablanan_msj.document.file_name}`\nBot yenidən başladılır...")
             try:
-                await cyber.stop()
+                await rust.stop()
             except:
                 pass
             os.execl(sys.executable, sys.executable, *sys.argv)
