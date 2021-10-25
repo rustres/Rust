@@ -31,7 +31,7 @@ async def pluginyukle(client:Client, message:Message):
         if cavablanan_msj.document.file_name.split(".")[-1] != "py":
             await message.edit("`Yalnız Python faylı yükləyə bilirəm :(`")
             return
-        rust_directory = f"./CyberPro/plugins/{cavablanan_msj.document.file_name}"
+        rust_directory = f"./Rustify/plugins/{cavablanan_msj.document.file_name}"
         await message.edit("`Plugin yüklənir...`")
 
         if os.path.exists(rust_directory):
