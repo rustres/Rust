@@ -138,7 +138,7 @@ async def ustream(client:Client, message:Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await update_requirements()
         await message.edit("`Zorla güncəlləmə sona çatdı..`")
-        args = [sys.executable, "cyber.py"]
+        args = [sys.executable, "rust.py"]
         execle(sys.executable, *args, environ)
         return
     await message.edit("`RustUserBot`\n**Status:**\n`Güncəllənir...`")
@@ -148,7 +148,7 @@ async def ustream(client:Client, message:Message):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await message.edit("`RustUserBot`\n**Status:**\n`Yenidən başladılır...`")
-    args = [sys.executable, "cyber.py"]
+    args = [sys.executable, "rust.py"]
     execle(sys.executable, *args, environ)
     return
 
