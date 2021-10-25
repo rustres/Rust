@@ -3,7 +3,7 @@ from os import listdir
 def pluginlerim() -> str:
     pluginler = []
 
-    for fayl in listdir("./CyberPro/plugins/"):
+    for fayl in listdir("./Rustify/plugins/"):
         if not fayl.endswith(".py") or fayl.startswith("_"):
             continue
         pluginler.append(fayl.replace('.py',''))
