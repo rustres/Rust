@@ -2,7 +2,7 @@ import re
 import time
 from typing import List
 from pyrogram.types import Message
-from CyberPro import COMMAND_HAND_LER
+from Rustify import COMMAND_HAND_LER
 
 def extract_time(time_val):
     if any(time_val.endswith(unit) for unit in ('s', 'm', 'h', 'd')):
