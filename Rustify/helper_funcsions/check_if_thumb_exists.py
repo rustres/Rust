@@ -1,6 +1,6 @@
 import os
 
-from CyberPro import TMP_DOWNLOAD_DIRECTORY
+from Rustify import TMP_DOWNLOAD_DIRECTORY
 
 
 def is_thumb_image_exists():
