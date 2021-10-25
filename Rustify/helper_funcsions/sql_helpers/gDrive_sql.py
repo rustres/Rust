@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, Integer, String, LargeBinary
 
-from CyberPro.helper_functions.sql_helpers import BASE, SESSION
+from Rustify.helper_functions.sql_helpers import BASE, SESSION
 
 
 class gDriveCreds(BASE):
