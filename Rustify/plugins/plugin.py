@@ -51,7 +51,7 @@ async def pluginyukle(client:Client, message:Message):
               return
             await message.edit(f"**Plugin uğurla yükləndi:** `{cavablanan_msj.document.file_name}`\nBot yenidən başladılır...")
             try:
-                await rust.stop()
+                await rusty.stop()
             except:
                 pass
             os.execl(sys.executable, sys.executable, *sys.argv)
@@ -82,7 +82,7 @@ async def premove(client:Client, message:Message):
             await asyncio.sleep(2)
             await message.edit(f"**Plugin silindi:** `{message.command[1]}`\n__Bot yenidən başladılır...__")
             try:
-                await cyber.stop()
+                await rusty.stop()
             except:
                 pass
             os.execl(sys.executable, sys.executable, *sys.argv)
