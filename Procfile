@@ -1,1 +1,1 @@
-worker: python3 -m CyberPro
+worker: python3 -m Rustify
