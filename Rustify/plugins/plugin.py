@@ -75,7 +75,7 @@ async def premove(client:Client, message:Message):
         if config in rustmodules:
             await message.edit("**Bu Rust UserBot moduludur bunu silə bilməzsən!**")
             return
-        rust_directory = f"./CyberPro/plugins/{message.command[1]}.py"
+        rust_directory = f"./Rustify/plugins/{message.command[1]}.py"
         
         if os.path.exists(rust_directory):
             os.remove(rust_directory)
