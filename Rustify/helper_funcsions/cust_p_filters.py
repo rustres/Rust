@@ -1,9 +1,9 @@
 import asyncio
 from pyrogram import filters
-from CyberPro import (
+from Rustify import (
     SUDO_USERS
 )
-from CyberPro.helper_functions.admin_check import AdminCheck
+from Rustify.helper_functions.admin_check import AdminCheck
 
 
 async def admin_check(_, message):
