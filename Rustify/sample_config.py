@@ -15,7 +15,7 @@ class Config(object):
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
     HEROKU_APIKEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", None)
-    OFFICIAL_UPSTREAM_REPO = os.environ.get("OFFICIAL_UPSTREAM_REPO", "https://github.com/FaridDadashzade/CyberPro")
+    OFFICIAL_UPSTREAM_REPO = os.environ.get("OFFICIAL_UPSTREAM_REPO", "https://github.com/rustres/Rust")
     DB_URI = os.environ.get("DATABASE_URL", None)
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
