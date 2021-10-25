@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, String
 
-from CyberPro.helper_functions.sql_helpers import BASE, SESSION
+from Rustify.helper_functions.sql_helpers import BASE, SESSION
 
 
 DEF_COUNT = 0
