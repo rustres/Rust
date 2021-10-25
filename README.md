@@ -21,19 +21,19 @@
 #### Serverə qurulum
 
 ```sh
-git clone https://github.com/FaridDadashzade/Rust.git
-cd CyberPro
+git clone https://github.com/rustres/Rust.git
+cd Rustify
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-python3 -m CyberPro
+python3 -m Rustify
 ```
 
 
 #### Nümunə plugin:
 
 ```from pyrogram import Client, filters
-from CyberPro.cyberhelp import CmdHelp
+from Rustify.cyberhelp import CmdHelp
 from pyrogram.types import Message
 
 @Client.on_message(filters.command(['əmr'], ['!','.','/']) & filters.me)
@@ -47,5 +47,22 @@ CmdHelp("fayladı").add_command("əmr", None, "Açıqlama yazaq.").add()
 
 ## Devs:
 
-[FaridDadashzade](https://github.com/FaridDadashzade)
-  [WhoMiri](https://github.com.com/FaridDadashzade)
+[All rust admins](https://github.com/rustres)
+
+[Wertin](https://t.me/wertinium)
+
+[Farid](https://t.me/Fvreed)
+
+[Aisha](https://t.me/TheAisa)
+
+
+## Credits:
+
+Thanks all modules for help or credits and idea
+
+[Kursad](https://github.com/KursadHD)
+[Yusuf Usta](https://github.com/yusufusta)
+[Dan (Pyrogram)](https://github.com/pyrogram)
+[Lonami (Telethon rist)](https://github.com/telethon)
+[Aditya](http://github.com/xditya)
+
